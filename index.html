@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Za ile Domczeki</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="all">
+	Domeczki za
+
+<script language="javascript" type="text/javascript">
+<!--
+// Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+teraz = new Date();
+dzien = new Date("Jul 24 2022 17:00:00");
+
+// wyliczanie roznicy
+sekund = Math.abs(teraz-dzien)/1000;
+minut = parseInt(sekund/60);
+godzin = parseInt(minut/60);
+dni = parseInt(godzin/24);
+lat = parseInt(dni/365);
+
+// wyliczanie calego okresu
+sekund = parseInt((sekund-minut*60));
+minut = parseInt((minut-godzin*60));
+godzin = parseInt((godzin-dni*24));
+dni = parseInt((dni-lat*365));
+	</script>
+	<div id="ile">
+	<script type="text/javascript" >
+
+
+document.write(+dni+" Dni ");
+document.write(+godzin+" Godziny ");
+document.write(+minut+" Minut i ");
+document.write(+sekund+" Sekund ");
+setTimeout(1000)
+
+</script>
+</div>
+<div id="elmo">
+<br>
+<img src="https://c.tenor.com/fq9BhDn_rRMAAAAd/elmo-drugs.gif">
+<br> <br>POV: DOMECZKI
+</div>
+</div>
+</body>
+</html>

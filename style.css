@@ -1,0 +1,23 @@
+#all
+{
+	font-size: 30px;
+
+color: white;
+}
+body
+{
+	font-family: 'Press Start 2P', cursive;
+	background-image: url(prism.png);
+	margin: 0px;
+	text-align: center;
+	margin-top: 8%;
+}
+#ile
+{
+	margin-top: 6%;
+	text-align: center;
+}
+#elmo
+{
+	margin-top: 1%;
+}
