@@ -37,10 +37,59 @@ dni = parseInt((dni-lat*365));
 	<script type="text/javascript" >
 
 
-document.write(+dni+" Dni ");
-document.write(+godzin+" Godziny ");
-document.write(+minut+" Minut i ");
-document.write(+sekund+" Sekund ");
+
+
+if (dni==0) {document.write(+dni+" Dni ");} else{
+if (dni>4 ) {document.write(+dni+" Dni ");
+	
+} else
+{
+	if (dni>1) {
+		document.write(+dni+" Dni ");
+	}
+	else {document.write(+dni+" Dzień ");}
+}
+}
+
+setTimeout(1000)
+if (godzin==0) {
+	document.write(+godzin+" Godzin ");
+} else{
+if (godzin>4) {document.write(+godzin+" Godzin ");
+	
+} else
+{
+	if (godzin>1) {
+		document.write(+godzin+" Godziny ");
+	}
+	else document.write(+godzin+" Godzina ");}
+}
+setTimeout(1000)
+if (minut==0) {document.write(+minut+" Minut i ");}
+else{
+if (minut>4) {document.write(+minut+" Minut i ");
+	
+} else
+{
+	if (minut>1) {
+		document.write(+minut+" Minuty i ");
+	}
+	else {document.write(+minut+" Minuta i ");}
+}
+}
+setTimeout(1000)
+if (sekund==0) {
+	document.write(+sekund+" Sekund ");
+}else{
+if (sekund>4) {document.write(+sekund+" Sekund ");
+	
+} else
+{
+	if (sekund>1) {
+		document.write(+sekund+" Sekundy ");
+	}
+	else {document.write(+sekund+" Sekunda ");}
+}}
 setTimeout(1000)
 
 </script>
