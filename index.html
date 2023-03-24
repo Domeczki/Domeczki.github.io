@@ -15,7 +15,7 @@
 	Domeczki za
 
 <script language="javascript" type="text/javascript">
-	
+setInterval(function() {	
 <!--
 // Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
 teraz = new Date();
@@ -33,12 +33,12 @@ sekund = parseInt((sekund-minut*60));
 minut = parseInt((minut-godzin*60));
 godzin = parseInt((godzin-dni*24));
 dni = parseInt((dni-lat*365));
-	</script>
+	}, 1000);</script>
 	<div id="ile">
 	<script type="text/javascript" >
 
 
-setInterval(function() {
+
 
 if (dni==0) {document.write(+dni+" Dni ");} else{
 if (dni>4 ) {document.write(+dni+" Dni ");
@@ -90,7 +90,7 @@ if (sekund>4) {document.write(+sekund+" Sekund ");
 		document.write(+sekund+" Sekundy ");
 	}
 	else {document.write(+sekund+" Sekunda ");}
-}}}, 1000);
+}}
 setTimeout(1000)
 
 </script>
