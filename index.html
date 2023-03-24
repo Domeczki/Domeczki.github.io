@@ -15,7 +15,7 @@
 	Domeczki za
 
 <script language="javascript" type="text/javascript">
-	setInterval(function() {
+	
 <!--
 // Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
 teraz = new Date();
@@ -38,7 +38,7 @@ dni = parseInt((dni-lat*365));
 	<script type="text/javascript" >
 
 
-
+setInterval(function() {
 
 if (dni==0) {document.write(+dni+" Dni ");} else{
 if (dni>4 ) {document.write(+dni+" Dni ");
@@ -90,9 +90,9 @@ if (sekund>4) {document.write(+sekund+" Sekund ");
 		document.write(+sekund+" Sekundy ");
 	}
 	else {document.write(+sekund+" Sekunda ");}
-}}
+}}}, 1000);
 setTimeout(1000)
-}, 1000);
+
 </script>
 </div>
 <div id="elmo">
