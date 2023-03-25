@@ -1,7 +1,4 @@
-body {
-  background-image: url(prism.png);
-  font-family: 'Press Start 2P', cursive;
-}
+
 
 #all {
   display: flex;
@@ -40,4 +37,8 @@ body {
 #elmo img {
   max-width: 100%;
   height: auto;
+}
+body {
+  background-image: url(prism.png);
+  font-family: 'Press Start 2P', cursive;
 }
