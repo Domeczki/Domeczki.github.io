@@ -8,6 +8,10 @@ color: white;
 }
 body
 {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 	font-family: 'Press Start 2P', cursive;
 	background-image: url(prism.png);
 	margin: 0px;
