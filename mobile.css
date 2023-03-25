@@ -1,0 +1,20 @@
+/* Ustawienie szerokości dla urządzeń mobilnych */
+@media (max-width: 480px) {
+  #all {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  #countdown {
+    flex-direction: column;
+  }
+  
+  #countdown span {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  #elmo {
+    font-size: 1.2rem;
+  }
+}
