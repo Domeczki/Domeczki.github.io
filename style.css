@@ -1,46 +1,58 @@
-
-
+@media only screen and (max-width: 600px) {
 #all {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: white;
-  
+height: auto;
 }
 
 #countdown {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-#countdown span {
-  padding: 0.5rem;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin: 0.5rem;
+font-size: 2rem;
 }
 
 #elmo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: 2rem;
+font-size: 1.5rem;
+margin-top: 1rem;
+}
+}
+
+#all {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+#countdown {
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 3rem;
+font-weight: bold;
+}
+
+#countdown span {
+padding: 0.5rem;
+border-radius: 5px;
+background-color: rgba(0, 0, 0, 0.5);
+margin: 0.5rem;
+}
+
+#elmo {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 2rem;
+font-weight: bold;
+margin-top: 2rem;
 }
 
 #elmo img {
-  max-width: 100%;
-  height: auto;
+max-width: 100%;
+height: auto;
 }
+
 body {
-  background-image: url(prism.png);
-  font-family: 'Press Start 2P', cursive;
-  color: white;
+background-image: url(prism.png);
+font-family: 'Press Start 2P', cursive;
+color: white;
 }
