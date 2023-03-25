@@ -23,12 +23,9 @@ body
 }
 #elmo
 {
-	position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  
-  font-size: 30px;
-  color: white; 
+	 display: flex;
+  justify-content: center; /* centruj poziomo */
+  align-items: center; /* centruj pionowo */
+  margin-top: 1%;
 	
 }
