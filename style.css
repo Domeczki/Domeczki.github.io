@@ -1,5 +1,8 @@
 #all
 {
+	display: flex;
+  justify-content: center; /* centruj poziomo */
+  align-items: center; /* centruj pionowo */
 	font-size: 30px;
 
 color: white;
@@ -19,8 +22,7 @@ body
 }
 #elmo
 {
-	  display: flex;
-  justify-content: center; /* centruj poziomo */
-  align-items: center; /* centruj pionowo */
+	margin: auto;
+	  
 	margin-top: 1%;
 }
