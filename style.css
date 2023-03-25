@@ -21,9 +21,7 @@ body
 }
 #elmo
 {
-	 display: flex;
-  justify-content: center; /* centruj poziomo */
-  align-items: center; /* centruj pionowo */
+
   margin-top: 1%;
 	
 }
