@@ -1,7 +1,7 @@
 /* Ustawienie szerokości dla urządzeń mobilnych */
-@media (max-width: 480px) {
+@media (max-width: 550px) {
   #all {
-    font-size: 1.5rem;
+    font-size: 16px;
     text-align: center;
   }
   
