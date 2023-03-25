@@ -1,29 +1,43 @@
-#all
-{
-
-	font-size: 30px;
-	hight: 100%;
-	with:100%;
-
-color: white;
+body {
+  background-image: url(prism.png);
+  font-family: 'Press Start 2P', cursive;
 }
-body
-{
-	
-	font-family: 'Press Start 2P', cursive;
-	background-image: url(prism.png);
-	margin: 0px;
-	text-align: center;
-	margin-top: 8%;
-}
-#ile
-{
-	margin-top: 6%;
-	text-align: center;
-}
-#elmo
-{
 
-  margin-top: 1%;
-	
+#all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#countdown span {
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0.5rem;
+}
+
+#elmo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+#elmo img {
+  max-width: 100%;
+  height: auto;
 }
