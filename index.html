@@ -3,103 +3,75 @@
 <head>
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Za ile Domczeki</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="all">
-	Domeczki za
+	<div id="all">
+		Domeczki za <br><br>
+		<div id="countdown">
+			<span id="days"></span>
+			<span id="hours"></span>
+			<span id="minutes"></span>
+			<span id="seconds"></span>
+		</div>
+		<div id="elmo">
+			<br>
+			<img src="https://c.tenor.com/fq9BhDn_rRMAAAAd/elmo-drugs.gif">
+			<br> <br>POV: DOMECZKI
+		</div>
+	</div>
+	<script>
+		function countDown() {
+			var eventDate = new Date("August 19, 2023 00:00:00").getTime();
+			var now = new Date().getTime();
+			var remTime = eventDate - now;
 
-<script language="javascript" type="text/javascript">
-	
-<!--
-// Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
-teraz = new Date();
-dzien = new Date("Aug 19 2023 15:00:00");
+			var days = Math.floor(remTime / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((remTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((remTime % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((remTime % (1000 * 60)) / 1000);
 
-// wyliczanie roznicy
-sekund = Math.abs(teraz-dzien)/1000;
-minut = parseInt(sekund/60);
-godzin = parseInt(minut/60);
-dni = parseInt(godzin/24);
-lat = parseInt(dni/365);
-
-// wyliczanie calego okresu
-sekund = parseInt((sekund-minut*60));
-minut = parseInt((minut-godzin*60));
-godzin = parseInt((godzin-dni*24));
-dni = parseInt((dni-lat*365));
-	}, 1000);</script>
-	<div id="ile">
-	<script type="text/javascript" >
-
-
-
-
-if (dni==0) {document.write(+dni+" Dni ");} else{
-if (dni>4 ) {document.write(+dni+" Dni ");
-	
-} else
-{
-	if (dni>1) {
-		document.write(+dni+" Dni ");
-	}
-	else {document.write(+dni+" Dzień ");}
+			if (days === 1) {
+  document.getElementById("days").innerHTML = days + " dzień";
+} else if (days % 10 >= 2 && days % 10 <= 4 && !(days >= 12 && days <= 14)) {
+  document.getElementById("days").innerHTML = days + " dni";
+} else {
+  document.getElementById("days").innerHTML = days + " dni";
 }
+			if (hours === 1) {
+  document.getElementById("hours").innerHTML = hours + " godzina";
+} else if (hours % 10 >= 2 && hours % 10 <= 4 && !(hours >= 12 && hours <= 14)) {
+  document.getElementById("hours").innerHTML = hours + " godziny";
+} else {
+  document.getElementById("hours").innerHTML = hours + " godzin";
+}
+			if (minutes === 1) {
+  document.getElementById("minutes").innerHTML = minutes + " minuta";
+} else if (minutes % 10 >= 2 && minutes % 10 <= 4 && !(minutes >= 12 && minutes <= 14)) {
+  document.getElementById("minutes").innerHTML = minutes + " minuty";
+} else {
+  document.getElementById("minutes").innerHTML = minutes + " minut";
+}
+			if (seconds === 1) {
+  document.getElementById("seconds").innerHTML = seconds + " sekunda";
+} else if (seconds % 10 >= 2 && seconds % 10 <= 4 && !(seconds >= 12 && seconds <= 14)) {
+  document.getElementById("seconds").innerHTML = seconds + " sekundy";
+} else {
+  document.getElementById("seconds").innerHTML = seconds + " sekund";
 }
 
-setTimeout(1000)
-if (godzin==0) {
-	document.write(+godzin+" Godzin ");
-} else{
-if (godzin>4) {document.write(+godzin+" Godzin ");
-	
-} else
-{
-	if (godzin>1) {
-		document.write(+godzin+" Godziny ");
-	}
-	else document.write(+godzin+" Godzina ");}
-}
-setTimeout(1000)
-if (minut==0) {document.write(+minut+" Minut i ");}
-else{
-if (minut>4) {document.write(+minut+" Minut i ");
-	
-} else
-{
-	if (minut>1) {
-		document.write(+minut+" Minuty i ");
-	}
-	else {document.write(+minut+" Minuta i ");}
-}
-}
-setTimeout(1000)
-if (sekund==0) {
-	document.write(+sekund+" Sekund ");
-}else{
-if (sekund>4) {document.write(+sekund+" Sekund ");
-	
-} else
-{
-	if (sekund>1) {
-		document.write(+sekund+" Sekundy ");
-	}
-	else {document.write(+sekund+" Sekunda ");}
-}}
-setTimeout(1000)
+			if (remTime < 0) {
+				clearInterval(intervalId);
+				document.getElementById("countdown").innerHTML = "Wydarzenie już się odbyło!";
+			}
+		}
 
-</script>
-</div>
-<div id="elmo">
-<br>
-<img src="https://c.tenor.com/fq9BhDn_rRMAAAAd/elmo-drugs.gif">
-<br> <br>POV: DOMECZKI
-</div>
-</div>
+		var intervalId = setInterval(countDown, 1000);
+	</script>
 </body>
 </html>
