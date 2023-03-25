@@ -4,6 +4,7 @@
   justify-content: center; /* centruj poziomo */
   align-items: center; /* centruj pionowo */
 	font-size: 30px;
+	hight: 100%;
 
 color: white;
 }
