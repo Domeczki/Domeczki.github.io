@@ -1,43 +1,74 @@
+/* Resetowanie stylów */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ustawienia dla całej strony */
 body {
-  background-image: url(prism.png);
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
 }
 
+/* Ustawienia dla kontenera */
 #all {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: white;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px;
 }
 
+/* Ustawienia dla tekstu "Domeczki za" */
+#all > div:first-child {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Ustawienia dla odliczania czasu */
 #countdown {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+#countdown > span {
+  font-size: 36px;
   font-weight: bold;
+  margin-right: 10px;
 }
 
-#countdown span {
-  padding: 0.5rem;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin: 0.5rem;
-}
-
+/* Ustawienia dla obrazka */
 #elmo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: 2rem;
+  margin-top: 40px;
+  font-size: 36px;
 }
 
-#elmo img {
+#elmo > img {
   max-width: 100%;
-  height: auto;
+}
+
+/* Ustawienia dla różnych rozmiarów ekranów */
+@media screen and (max-width: 768px) {
+  #all {
+    padding: 20px;
+  }
+
+  #all > div:first-child {
+    font-size: 36px;
+  }
+
+  #countdown {
+    flex-direction: column;
+  }
+
+  #countdown > span {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
